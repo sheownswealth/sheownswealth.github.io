@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>SheOwnsWealth | Own Your Income. Own Your Business. Own Your Power.</title>
+
+  <meta
+    name="description"
+    content="SheOwnsWealth is a women's empowerment platform helping women create income, build businesses, and step confidently into ownership."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      --ivory: #F8F4EE;
+      --soft-white: #FFFDFC;
+      --cream: #F2E9DE;
+      --cream-deep: #EADFD1;
+      --gold: #C79A4A;
+      --gold-dark: #A9782F;
+      --espresso: #241C18;
+      --brown: #5F4A3E;
+      --muted: #897568;
+      --blush: #E8D1CA;
+      --blush-light: #F7ECE8;
+      --border: #E2D5C8;
+      --shadow: 0 18px 55px rgba(57, 39, 27, 0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      background: var(--soft-white);
+      color: var(--espresso);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    .container {
+      width: min(1180px, 90%);
+      margin-inline: auto;
+    }
+
+    /* TOP BAR */
+
+    .announcement {
+      background: linear-gradient(
+        90deg,
+        #A8782D,
+        #C79A4A,
+        #A8782D
+      );
+      color: white;
+      text-align: center;
+      padding: 9px 16px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.7px;
+      text-transform: uppercase;
+    }
+
+    /* NAVIGATION */
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 253, 252, 0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(199, 154, 74, 0.15);
+    }
+
+    .nav-inner {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 28px;
+      line-height: 0.95;
+      letter-spacing: 3px;
+      font-weight: 600;
+    }
+
+    .logo span {
+      display: block;
+      margin-top: 7px;
+      color: var(--gold);
+      font-size: 17px;
+      letter-spacing: 7px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 29px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.1px;
+    }
+
+    .nav-links a {
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-dark);
+    }
+
+    .nav-button {
+      border: 1px solid var(--gold);
+      padding: 13px 19px;
+      color: var(--gold-dark);
+      transition: 0.25s ease;
+    }
+
+    .nav-button:hover {
+      background: var(--gold);
+      color: white !important;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 635px;
+      display: flex;
+      align-items: center;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(248, 244, 238, 1) 0%,
+          rgba(248, 244, 238, 0.98) 26%,
+          rgba(248, 244, 238, 0.84) 42%,
+          rgba(248, 244, 238, 0.30) 59%,
+          rgba(248, 244, 238, 0.02) 77%
+        ),
+        url("malani-hero.png");
+
+      background-size: cover;
+      background-position: center right;
+    }
+
+    .hero-content {
+      width: 49%;
+      padding: 72px 0;
+    }
+
+    .eyebrow {
+      margin-bottom: 16px;
+      color: var(--gold-dark);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.3px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(60px, 6.2vw, 94px);
+      font-weight: 500;
+      line-height: 0.83;
+      letter-spacing: -2px;
+      margin-bottom: 29px;
+    }
+
+    .hero h1 span {
+      display: block;
+      margin-top: 16px;
+      color: var(--gold);
+    }
+
+    .tagline {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(22px, 2.1vw, 28px);
+      font-weight: 500;
+      font-style: italic;
+      line-height: 1.15;
+      margin-bottom: 18px;
+    }
+
+    .hero-copy {
+      max-width: 470px;
+      color: var(--brown);
+      font-size: 15px;
+      margin-bottom: 31px;
+    }
+
+    .button-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      min-height: 50px;
+      padding: 0 27px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--gold);
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.15px;
+      transition: 0.25s ease;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: white;
+    }
+
+    .btn-gold:hover {
+      background: var(--gold-dark);
+      border-color: var(--gold-dark);
+    }
+
+    .btn-light {
+      background: rgba(255, 255, 255, 0.82);
+      color: var(--espresso);
+    }
+
+    .btn-light:hover {
+      background: var(--espresso);
+      border-color: var(--espresso);
+      color: white;
+    }
+
+    /* VALUE STRIP */
+
+    .value-strip {
+      background: white;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .value-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .value-item {
+      min-height: 96px;
+      padding: 20px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-right: 1px solid var(--border);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    .value-item:last-child {
+      border-right: none;
+    }
+
+    .value-item span {
+      margin-bottom: 7px;
+      color: var(--gold);
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    /* GLOBAL SECTION */
+
+    section {
+      padding: 78px 0;
+    }
+
+    .section-title {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(42px, 5vw, 66px);
+      font-weight: 500;
+      line-height: 0.96;
+      text-align: center;
+      margin-bottom: 14px;
+    }
+
+    .section-title span {
+      color: var(--gold);
+    }
+
+    .section-subtitle {
+      max-width: 640px;
+      margin: 0 auto 40px;
+      color: var(--brown);
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .gold-divider {
+      width: 78px;
+      height: 2px;
+      background: var(--gold);
+      margin: 25px auto;
+      position: relative;
+    }
+
+    .gold-divider::after {
+      content: "";
+      width: 7px;
+      height: 7px;
+      background: var(--gold);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    /* MESSAGE */
+
+    .message-section {
+      background: var(--ivory);
+      padding: 67px 0 60px;
+    }
+
+    .message-box {
+      max-width: 890px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .message-kicker {
+      display: block;
+      margin-bottom: 15px;
+      color: var(--gold-dark);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .message-box p {
+      max-width: 780px;
+      margin: auto;
+      color: var(--brown);
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    /* PILLARS */
+
+    .pillars {
+      background: var(--soft-white);
+      padding-top: 72px;
+      padding-bottom: 80px;
+    }
+
+    .pillar-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .pillar-card {
+      min-height: 350px;
+      padding: 39px 30px 33px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border: 1px solid var(--border);
+      transition: 0.3s ease;
+    }
+
+    .pillar-card:nth-child(1) {
+      background: #FFFCF8;
+    }
+
+    .pillar-card:nth-child(2) {
+      background: #FBF4F1;
+    }
+
+    .pillar-card:nth-child(3) {
+      background: #FCF9F4;
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+      border-color: rgba(199, 154, 74, 0.5);
+    }
+
+    .pillar-icon {
+      width: 76px;
+      height: 76px;
+      margin-bottom: 22px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: rgba(199, 154, 74, 0.10);
+      border: 1px solid rgba(199, 154, 74, 0.25);
+      color: var(--gold-dark);
+      font-family: "Cormorant Garamond", serif;
+      font-size: 28px;
+    }
+
+    .pillar-card h3 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 29px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .pillar-card p {
+      max-width: 290px;
+      color: var(--brown);
+      font-size: 13px;
+      margin-bottom: 24px;
+    }
+
+    .pillar-card .btn {
+      margin-top: auto;
+    }
+
+    /* SHOP */
+
+    .shop-section {
+      background: var(--ivory);
+      padding-top: 76px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .product-card {
+      position: relative;
+      padding: 15px 15px 20px;
+      background: white;
+      border: 1px solid var(--border);
+      transition: 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+
+    .product-image {
+      height: 190px;
+      margin-bottom: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 25px;
+      background: linear-gradient(
+        145deg,
+        #F8EEE7,
+        #EEDFD2
+      );
+      color: var(--gold-dark);
+      text-align: center;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 28px;
+      line-height: 1.05;
+    }
+
+    .badge {
+      position: absolute;
+      top: 26px;
+      left: 25px;
+      z-index: 5;
+      padding: 6px 10px;
+      background: var(--gold);
+      color: white;
+      font-size: 8px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .product-card h3 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 24px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 7px;
+    }
+
+    .product-card p {
+      min-height: 58px;
+      color: var(--brown);
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.55;
+    }
+
+    .product-card .btn {
+      width: 100%;
+      min-height: 43px;
+      margin-top: 12px;
+    }
+
+    /* EMPOWERMENT */
+
+    .empowerment {
+      padding: 66px 20px;
+      background:
+        linear-gradient(
+          90deg,
+          #F8EDE8,
+          #F9F3EC,
+          #F8EDE8
+        );
+      text-align: center;
+    }
+
+    .empowerment h2 {
+      max-width: 940px;
+      margin: auto;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(44px, 5.7vw, 74px);
+      font-weight: 500;
+      line-height: 0.98;
+    }
+
+    .empowerment h2 span {
+      display: block;
+      margin-top: 10px;
+      color: var(--gold-dark);
+      font-style: italic;
+    }
+
+    .empowerment p {
+      max-width: 700px;
+      margin: 23px auto 0;
+      color: var(--brown);
+      font-size: 15px;
+    }
+
+    /* FOUNDER */
+
+    .founder {
+      background: white;
+    }
+
+    .founder-grid {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      align-items: center;
+      gap: 62px;
+    }
+
+    .founder-photo {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--cream);
+      box-shadow: 0 18px 45px rgba(57, 39, 27, 0.08);
+    }
+
+    .founder-photo img {
+      display: block;
+      width: 100%;
+      height: 620px;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .founder-copy {
+      align-self: center;
+    }
+
+    .founder-label {
+      margin-bottom: 12px;
+      color: var(--gold-dark);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2.3px;
+      text-transform: uppercase;
+    }
+
+    .founder h2 {
+      margin-bottom: 23px;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(42px, 4.7vw, 64px);
+      font-weight: 500;
+      line-height: 1;
+    }
+
+    .founder h2 span {
+      color: var(--gold);
+    }
+
+    .founder p {
+      margin-bottom: 15px;
+      color: var(--brown);
+      font-size: 14px;
+      line-height: 1.75;
+    }
+
+    .founder-quote {
+      margin: 28px 0;
+      padding-left: 24px;
+      border-left: 2px solid var(--gold);
+      color: var(--gold-dark);
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(28px, 3vw, 40px);
+      line-height: 1.05;
+    }
+
+    /* SOCIAL PROOF PLACEHOLDER */
+
+    .proof-section {
+      background: var(--ivory);
+      padding: 68px 0;
+    }
+
+    .proof-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .proof-card {
+      padding: 28px;
+      background: white;
+      border: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .proof-card h3 {
+      margin-bottom: 8px;
+      color: var(--gold-dark);
+      font-family: "Cormorant Garamond", serif;
+      font-size: 25px;
+    }
+
+    .proof-card p {
+      color: var(--brown);
+      font-size: 13px;
+    }
+
+    /* FREE GUIDE */
+
+    .free-guide {
+      background: var(--blush-light);
+    }
+
+    .guide-box {
+      max-width: 860px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .guide-box h2 {
+      margin-bottom: 16px;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(42px, 5vw, 64px);
+      font-weight: 500;
+      line-height: 1;
+    }
+
+    .guide-box p {
+      max-width: 630px;
+      margin: 0 auto 27px;
+      color: var(--brown);
+      font-size: 14px;
+    }
+
+    .email-form {
+      max-width: 620px;
+      margin: auto;
+      display: flex;
+      gap: 9px;
+    }
+
+    .email-form input {
+      flex: 1;
+      min-height: 51px;
+      padding: 0 18px;
+      background: white;
+      border: 1px solid var(--border);
+      outline: none;
+    }
+
+    .email-form input:focus {
+      border-color: var(--gold);
+    }
+
+    .email-form button {
+      border: none;
+      cursor: pointer;
+    }
+
+    .form-note {
+      margin-top: 11px !important;
+      font-size: 10px !important;
+      color: var(--muted) !important;
+    }
+
+    /* COMMUNITY */
+
+    .community {
+      padding: 74px 0;
+      background: var(--espresso);
+      color: white;
+      text-align: center;
+    }
+
+    .community h2 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(46px, 5.7vw, 72px);
+      font-weight: 500;
+      line-height: 1;
+    }
+
+    .community h2 span {
+      color: var(--gold);
+    }
+
+    .community p {
+      max-width: 650px;
+      margin: 18px auto 31px;
+      color: #DED4CE;
+      font-size: 14px;
+    }
+
+    .social-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .social-button {
+      min-width: 130px;
+      padding: 13px 20px;
+      border: 1px solid var(--gold);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.1px;
+      text-transform: uppercase;
+      transition: 0.25s ease;
+    }
+
+    .social-button:hover {
+      background: var(--gold);
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 53px 0 88px;
+      background: #18120F;
+      color: white;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 48px;
+    }
+
+    footer .logo {
+      margin-bottom: 18px;
+    }
+
+    footer p,
+    footer a {
+      color: #CFC2BA;
+      font-size: 12px;
+    }
+
+    .footer-title {
+      margin-bottom: 14px;
+      color: var(--gold);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 7px;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold);
+    }
+
+    .copyright {
+      margin-top: 42px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: #978981;
+      font-size: 10px;
+    }
+
+    /* MOBILE SHOP */
+
+    .mobile-shop {
+      display: none;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 1000px) {
+      .nav-links {
+        gap: 20px;
+      }
+
+      .hero-content {
+        width: 54%;
+      }
+
+      .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 850px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        min-height: auto;
+        padding-top: 440px;
+
+        background:
+          linear-gradient(
+            0deg,
+            rgba(248,244,238,1) 0%,
+            rgba(248,244,238,0.98) 25%,
+            rgba(248,244,238,0.50) 48%,
+            rgba(248,244,238,0.04) 78%
+          ),
+          url("malani-hero.png");
+
+        background-color: var(--ivory);
+        background-size: auto 500px;
+        background-repeat: no-repeat;
+        background-position: top center;
+      }
+
+      .hero-content {
+        width: 100%;
+        padding: 30px 0 53px;
+        text-align: center;
+      }
+
+      .hero-copy {
+        margin-inline: auto;
+      }
+
+      .button-row {
+        justify-content: center;
+      }
+
+      .value-grid,
+      .pillar-grid,
+      .proof-grid,
+      .founder-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .value-item {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .value-item:last-child {
+        border-bottom: none;
+      }
+
+      .founder-grid {
+        gap: 38px;
+      }
+
+      .founder-photo img {
+        height: 520px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .email-form {
+        flex-direction: column;
+      }
+
+      .mobile-shop {
+        display: block;
+        position: fixed;
+        left: 5%;
+        bottom: 14px;
+        width: 90%;
+        z-index: 9999;
+        padding: 15px;
+        background: var(--gold);
+        color: white;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        text-align: center;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .announcement {
+        padding: 8px 12px;
+        font-size: 8px;
+        letter-spacing: 1px;
+      }
+
+      .nav-inner {
+        min-height: 69px;
+      }
+
+      .logo {
+        font-size: 23px;
+      }
+
+      .logo span {
+        font-size: 14px;
+      }
+
+      .hero {
+        padding-top: 390px;
+        background-size: auto 440px;
+      }
+
+      .hero h1 {
+        font-size: 58px;
+      }
+
+      .tagline {
+        font-size: 21px;
+      }
+
+      section {
+        padding: 62px 0;
+      }
+
+      .message-section {
+        padding: 58px 0 55px;
+      }
+
+      .pillar-card {
+        min-height: auto;
+      }
+
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title {
+        font-size: 43px;
+      }
+
+      .empowerment h2 {
+        font-size: 44px;
+      }
+
+      .founder h2 {
+        font-size: 42px;
+      }
+
+      .founder-photo img {
+        height: 460px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="announcement">
+    Welcome to SheOwnsWealth | Build Income. Build Confidence. Build Something of Your Own.
+  </div>
+
+  <nav>
+    <div class="container nav-inner">
+
+      <a class="logo" href="#home">
+        SHE OWNS
+        <span>WEALTH</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#build">Start Here</a>
+        <a href="#shop">Shop</a>
+        <a href="#founder">About</a>
+        <a href="#community">Community</a>
+
+        <a class="nav-button" href="#community">
+          Join the Community
+        </a>
+      </div>
+
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="container">
+
+      <div class="hero-content">
+
+        <div class="eyebrow">
+          Women Empowering Women
+        </div>
+
+        <h1>
+          SHE OWNS
+          <span>WEALTH</span>
+        </h1>
+
+        <div class="tagline">
+          Own Your Income. Own Your Business. Own Your Power.
+        </div>
+
+        <p class="hero-copy">
+          Helping women create income, build businesses, and step
+          confidently into ownership.
+        </p>
+
+        <div class="button-row">
+
+          <a href="#build" class="btn btn-gold">
+            Start Your Journey
+          </a>
+
+          <a
+            href="https://beacons.ai/sheownsreselling"
+            target="_blank"
+            class="btn btn-light"
+          >
+            Shop Resources
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+  <div class="value-strip">
+    <div class="container value-grid">
+
+      <div class="value-item">
+        <span>♀</span>
+        Built for Women Who Want More
+      </div>
+
+      <div class="value-item">
+        <span>✦</span>
+        Real Resources. Real Action.
+      </div>
+
+      <div class="value-item">
+        <span>♛</span>
+        Build Freedom on Your Terms
+      </div>
+
+    </div>
+  </div>
+
+  <section class="message-section">
+
+    <div class="container message-box">
+
+      <div class="eyebrow">
+        The SheOwnsWealth Movement
+      </div>
+
+      <h2 class="section-title">
+        This Is Bigger <span>Than Money.</span>
+      </h2>
+
+      <div class="gold-divider"></div>
+
+      <span class="message-kicker">
+        Options. Confidence. Independence. Ownership.
+      </span>
+
+      <p>
+        SheOwnsWealth is for the woman who knows she is capable of more
+        and is ready to stop waiting for the perfect opportunity and
+        start creating her own.
+      </p>
+
+    </div>
+
+  </section>
+
+  <section class="pillars" id="build">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        How Do You Want to <span>Build?</span>
+      </h2>
+
+      <p class="section-subtitle">
+        Start where you are. Choose your path. Build something of your own.
+      </p>
+
+      <div class="pillar-grid">
+
+        <article class="pillar-card">
+
+          <div class="pillar-icon">$</div>
+
+          <h3>Start a Side Hustle</h3>
+
+          <p>
+            Turn your skills, time, or connections into additional income
+            and start creating something of your own.
+          </p>
+
+          <a href="#shop" class="btn btn-light">
+            Explore
+          </a>
+
+        </article>
+
+        <article class="pillar-card">
+
+          <div class="pillar-icon">♛</div>
+
+          <h3>Start Reselling</h3>
+
+          <p>
+            Get access to vendors, resources, and tools designed to help
+            you start selling with confidence.
+          </p>
+
+          <a
+            href="https://beacons.ai/sheownsreselling"
+            target="_blank"
+            class="btn btn-light"
+          >
+            Learn More
+          </a>
+
+        </article>
+
+        <article class="pillar-card">
+
+          <div class="pillar-icon">↗</div>
+
+          <h3>Build Your Business</h3>
+
+          <p>
+            Move from hustle to brand with resources designed to help you
+            build something bigger.
+          </p>
+
+          <a href="#shop" class="btn btn-light">
+            Get Started
+          </a>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="shop-section" id="shop">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Shop <span>SheOwnsWealth</span>
+      </h2>
+
+      <p class="section-subtitle">
+        Curated resources for women ready to create income and take action.
+      </p>
+
+      <div class="product-grid">
+
+        <article class="product-card">
+
+          <div class="badge">
+            Best Seller
+          </div>
+
+          <div class="product-image">
+            Elite Device Bundle
+          </div>
+
+          <h3>Elite Device Bundle</h3>
+
+          <p>
+            Premium device vendor resources for women ready to start reselling.
+          </p>
+
+          <a
+            href="https://beacons.ai/sheownsreselling"
+            target="_blank"
+            class="btn btn-gold"
+          >
+            Get Access
+          </a>
+
+        </article>
+
+        <article class="product-card">
+
+          <div class="badge">
+            Popular
+          </div>
+
+          <div class="product-image">
+            Shoe Vendor
+          </div>
+
+          <h3>Shoe Vendor</h3>
+
+          <p>
+            Access vendor resources for trending footwear and resale opportunities.
+          </p>
+
+          <a
+            href="https://beacons.ai/sheownsreselling"
+            target="_blank"
+            class="btn btn-gold"
+          >
+            Get Access
+          </a>
+
+        </article>
+
+        <article class="product-card">
+
+          <div class="badge">
+            Best Value
+          </div>
+
+          <div class="product-image">
+            Vendor Bundles
+          </div>
+
+          <h3>Vendor Bundles</h3>
+
+          <p>
+            Multiple vendor resources bundled together in one convenient place.
+          </p>
+
+          <a
+            href="https://beacons.ai/sheownsreselling"
+            target="_blank"
+            class="btn btn-gold"
+          >
+            Get Access
+          </a>
+
+        </article>
+
+        <article class="product-card">
+
+          <div class="badge">
+            Digital
+          </div>
+
+          <div class="product-image">
+            Digital Resources
+          </div>
+
+          <h3>Digital Resources</h3>
+
+          <p>
+            Practical digital tools and resources designed to help women build.
+          </p>
+
+          <a
+            href="https://beacons.ai/sheownsreselling"
+            target="_blank"
+            class="btn btn-gold"
+          >
+            Get Access
+          </a>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="empowerment">
+
+    <h2>
+      She Doesn't Wait for a Seat.
+      <span>She Builds Her Own Table.</span>
+    </h2>
+
+    <p>
+      SheOwnsWealth is for women who are ready to create opportunities
+      instead of waiting for them.
+    </p>
+
+  </section>
+
+  <section class="founder" id="founder">
+
+    <div class="container founder-grid">
+
+      <div class="founder-photo">
+        <img
+          src="malani%20founder.png"
+          alt="Malani, Founder of SheOwnsWealth"
+        >
+      </div>
+
+      <div class="founder-copy">
+
+        <div class="founder-label">
+          Meet the Founder
+        </div>
+
+        <h2>
+          Meet Malani.<br>
+          <span>Serial Entrepreneur. Champion for Women.</span>
+        </h2>
+
+        <p>
+          Malani is a serial entrepreneur, business builder, and passionate
+          champion for women's empowerment. Her entrepreneurial journey has
+          taught her that success isn't about waiting for the perfect opportunity.
+          It's about having the confidence to create one.
+        </p>
+
+        <p>
+          Through building, learning, taking risks, and refusing to give up
+          when things didn't go as planned, she discovered the power that
+          comes from creating income on your own terms.
+        </p>
+
+        <p>
+          She created SheOwnsWealth to help other women recognize that same
+          power within themselves. Her mission is to share real resources,
+          business opportunities, and practical strategies that help women
+          turn ideas into income and income into greater independence.
+        </p>
+
+        <div class="founder-quote">
+          “When a woman owns her income, she owns more of her choices.”
+        </div>
+
+        <p>
+          SheOwnsWealth is more than a business. It's her way of reminding
+          women that they are capable of building, creating, leading, and
+          becoming the woman they've always pictured themselves being.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="proof-section">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Built to Help Women <span>Take Action.</span>
+      </h2>
+
+      <p class="section-subtitle">
+        The goal is simple: give women practical resources, encouragement,
+        and a place to start.
+      </p>
+
+      <div class="proof-grid">
+
+        <article class="proof-card">
+          <h3>Real Resources</h3>
+          <p>
+            Practical tools and information designed to help you move from
+            thinking about it to actually starting.
+          </p>
+        </article>
+
+        <article class="proof-card">
+          <h3>Women Empowering Women</h3>
+          <p>
+            A brand built around women encouraging, supporting, and helping
+            other women create opportunities.
+          </p>
+        </article>
+
+        <article class="proof-card">
+          <h3>Income. Freedom. Impact.</h3>
+          <p>
+            Build income on your terms while creating more choices for your
+            life and your future.
+          </p>
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="free-guide">
+
+    <div class="container guide-box">
+
+      <div class="eyebrow">
+        Free Resource
+      </div>
+
+      <h2>
+        10 Side Hustles You Can Start This Month
+      </h2>
+
+      <p>
+        Join the SheOwnsWealth list for practical resources, business tips,
+        new drops, and encouragement designed to help you build.
+      </p>
+
+      <form
+        class="email-form"
+        onsubmit="event.preventDefault(); alert('Email signup coming soon!');"
+      >
+
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          required
+        >
+
+        <button
+          class="btn btn-gold"
+          type="submit"
+        >
+          Get the Free Guide
+        </button>
+
+      </form>
+
+      <p class="form-note">
+        No spam. Just resources designed to help you build.
+      </p>
+
+    </div>
+
+  </section>
+
+  <section class="community" id="community">
+
+    <div class="container">
+
+      <h2>
+        You're Not <span>Building Alone.</span>
+      </h2>
+
+      <p>
+        Join women who are building income, businesses, confidence,
+        and opportunities on their own terms.
+      </p>
+
+      <div class="social-row">
+
+        <a href="#" class="social-button">
+          Instagram
+        </a>
+
+        <a href="#" class="social-button">
+          TikTok
+        </a>
+
+        <a href="#" class="social-button">
+          Email List
+        </a>
+
+        <a href="#" class="social-button">
+          Community
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <div class="logo">
+            SHE OWNS
+            <span>WEALTH</span>
+          </div>
+
+          <p>
+            Own Your Income.<br>
+            Own Your Business.<br>
+            Own Your Power.
+          </p>
+
+        </div>
+
+        <div>
+
+          <div class="footer-title">
+            Quick Links
+          </div>
+
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#build">Start Here</a>
+            <a href="#shop">Shop</a>
+            <a href="#founder">About</a>
+            <a href="#community">Community</a>
+          </div>
+
+        </div>
+
+        <div>
+
+          <div class="footer-title">
+            Resources
+          </div>
+
+          <div class="footer-links">
+
+            <a
+              href="https://beacons.ai/sheownsreselling"
+              target="_blank"
+            >
+              Shop Resources
+            </a>
+
+            <a href="#">FAQ</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="copyright">
+        © 2026 SheOwnsWealth. All Rights Reserved.
+      </div>
+
+    </div>
+
+  </footer>
+
+  <a
+    class="mobile-shop"
+    href="https://beacons.ai/sheownsreselling"
+    target="_blank"
+  >
+    Shop SheOwnsWealth
+  </a>
+
+</body>
+</html>
