@@ -485,12 +485,15 @@
     }
 
     .product-card {
-      position: relative;
-      padding: 15px 15px 20px;
-      background: white;
-      border: 1px solid var(--border);
-      transition: 0.3s ease;
-    }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 260px;
+  padding: 28px 20px 20px;
+  background: white;
+  border: 1px solid var(--border);
+  transition: 0.3s ease;
+}
 
     .product-card:hover {
       transform: translateY(-4px);
@@ -517,40 +520,33 @@
     }
 
     .badge {
-      position: absolute;
-      top: 26px;
-      left: 25px;
-      z-index: 5;
-      padding: 6px 10px;
-      background: var(--gold);
-      color: white;
-      font-size: 8px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
+    position: static;
+    align-self: flex-start;
+    margin-bottom: 20px;
+    padding: 6px 10px;
+    background: var(--gold);
+    color: white;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.product-card p {
+    color: var(--brown);
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.55;
+    margin-bottom: 18px;
+}
+   
 
-    .product-card h3 {
-      font-family: "Cormorant Garamond", serif;
-      font-size: 24px;
-      font-weight: 600;
-      text-align: center;
-      margin-bottom: 7px;
-    }
-
-    .product-card p {
-      min-height: 58px;
-      color: var(--brown);
-      text-align: center;
-      font-size: 12px;
-      line-height: 1.55;
-    }
-
-    .product-card .btn {
-      width: 100%;
-      min-height: 43px;
-      margin-top: 12px;
-    }
+    
+.product-card .btn {
+    width: 100%;
+    min-height: 43px;
+    margin-top: auto;
+}
+   
 
     /* EMPOWERMENT */
 
