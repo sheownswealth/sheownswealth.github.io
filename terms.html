@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Terms & Conditions | She Owns Wealth</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+        :root {
+            --ivory: #F8F4EE;
+            --soft-white: #FFFDFC;
+            --cream: #F2E9DE;
+            --gold: #C79A4A;
+            --gold-dark: #A9782F;
+            --espresso: #241C18;
+            --brown: #5F4A3E;
+            --muted: #897568;
+            --border: #E2D5C8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--ivory);
+            color: var(--espresso);
+            font-family: "DM Sans", sans-serif;
+            line-height: 1.75;
+        }
+
+        .announcement {
+            background: var(--gold);
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        nav {
+            background: var(--soft-white);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-inner {
+            max-width: 1180px;
+            margin: 0 auto;
+            min-height: 90px;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            text-decoration: none;
+            color: var(--espresso);
+            font-family: "Cormorant Garamond", serif;
+            font-size: 29px;
+            font-weight: 600;
+            letter-spacing: 6px;
+            line-height: 1;
+        }
+
+        .logo span {
+            display: block;
+            color: var(--gold);
+            font-size: 15px;
+            letter-spacing: 8px;
+            margin-top: 8px;
+        }
+
+        .home-link {
+            color: var(--gold-dark);
+            border: 1px solid var(--gold);
+            padding: 13px 22px;
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: 0.3s ease;
+        }
+
+        .home-link:hover {
+            background: var(--gold);
+            color: white;
+        }
+
+        .legal-hero {
+            text-align: center;
+            padding: 85px 24px 45px;
+        }
+
+        .eyebrow {
+            color: var(--gold-dark);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        h1 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: clamp(52px, 7vw, 82px);
+            font-weight: 500;
+            line-height: 1;
+        }
+
+        h1 span {
+            color: var(--gold);
+        }
+
+        .updated {
+            color: var(--muted);
+            font-size: 12px;
+            margin-top: 22px;
+        }
+
+        .legal-container {
+            max-width: 900px;
+            margin: 0 auto 90px;
+            padding: 50px 55px;
+            background: var(--soft-white);
+            border: 1px solid var(--border);
+            box-shadow: 0 18px 50px rgba(57, 39, 27, 0.06);
+        }
+
+        .legal-container h2 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 32px;
+            font-weight: 600;
+            margin-top: 35px;
+            margin-bottom: 10px;
+            color: var(--espresso);
+        }
+
+        .legal-container h2:first-child {
+            margin-top: 0;
+        }
+
+        .legal-container p {
+            color: var(--brown);
+            font-size: 15px;
+            margin-bottom: 18px;
+        }
+
+        .legal-note {
+            margin-top: 35px;
+            padding: 22px;
+            background: var(--cream);
+            border-left: 3px solid var(--gold);
+        }
+
+        .legal-note p {
+            margin-bottom: 0;
+        }
+
+        .back-row {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .back-button {
+            display: inline-block;
+            background: var(--gold);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .back-button:hover {
+            background: var(--gold-dark);
+        }
+
+        footer {
+            background: #18120F;
+            color: white;
+            padding: 50px 24px 30px;
+        }
+
+        .footer-inner {
+            max-width: 1180px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            align-items: flex-end;
+        }
+
+        footer .logo {
+            color: white;
+        }
+
+        .footer-copy {
+            color: #CFC2BA;
+            font-size: 11px;
+            text-align: right;
+        }
+
+        @media (max-width: 700px) {
+            .nav-inner {
+                min-height: 75px;
+            }
+
+            .logo {
+                font-size: 22px;
+                letter-spacing: 4px;
+            }
+
+            .logo span {
+                font-size: 12px;
+                letter-spacing: 6px;
+            }
+
+            .home-link {
+                padding: 10px 14px;
+                font-size: 9px;
+            }
+
+            .legal-hero {
+                padding: 60px 20px 30px;
+            }
+
+            .legal-container {
+                margin: 0 18px 60px;
+                padding: 32px 24px;
+            }
+
+            .legal-container h2 {
+                font-size: 28px;
+            }
+
+            .footer-inner {
+                display: block;
+                text-align: center;
+            }
+
+            .footer-copy {
+                text-align: center;
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="announcement">
+        SHE OWNS WEALTH • BUILD INCOME • BUILD CONFIDENCE • BUILD SOMETHING OF YOUR OWN
+    </div>
+
+    <nav>
+        <div class="nav-inner">
+
+            <a class="logo" href="index.html">
+                SHE OWNS
+                <span>WEALTH</span>
+            </a>
+
+            <a class="home-link" href="index.html">
+                Back to Home
+            </a>
+
+        </div>
+    </nav>
+
+
+    <header class="legal-hero">
+
+        <div class="eyebrow">
+            She Owns Wealth
+        </div>
+
+        <h1>
+            Terms &amp; <span>Conditions</span>
+        </h1>
+
+        <div class="updated">
+            Last Updated: August 2026
+        </div>
+
+    </header>
+
+
+    <main class="legal-container">
+
+        <h2>Overview</h2>
+
+        <p>
+            These Terms &amp; Conditions govern your use of the She Owns Wealth
+            website, resources, vendor information, guides, templates, digital
+            products, and related content. By accessing this website or purchasing
+            our products or resources, you agree to these Terms &amp; Conditions.
+        </p>
+
+
+        <h2>Educational and Informational Purposes</h2>
+
+        <p>
+            The information, resources, vendor lists, guides, templates, and digital
+            products provided by She Owns Wealth are intended for educational and
+            informational purposes.
+        </p>
+
+        <p>
+            We do not guarantee specific income, business results, sales, profits,
+            or financial outcomes. Results vary and depend on many factors,
+            including your decisions, effort, experience, market conditions,
+            business practices, and other circumstances outside our control.
+        </p>
+
+
+        <h2>Vendor and Supplier Information</h2>
+
+        <p>
+            Vendor and supplier information is provided as a resource. She Owns
+            Wealth does not own or control third-party vendors unless expressly
+            stated otherwise.
+        </p>
+
+        <p>
+            We do not guarantee a third-party vendor's products, pricing,
+            availability, shipping, policies, quality, performance, customer
+            service, or future business practices. You are responsible for
+            conducting your own research and determining whether a vendor,
+            supplier, product, or opportunity is appropriate for you.
+        </p>
+
+
+        <h2>Digital Products and Resources</h2>
+
+        <p>
+            Unless otherwise stated, digital products, vendor resources,
+            downloadable materials, templates, guides, and other resources are
+            provided for the purchaser's personal or internal business use.
+        </p>
+
+        <p>
+            They may not be copied, reproduced, resold, redistributed, shared,
+            republished, uploaded, transferred, or otherwise made available to
+            others without permission from She Owns Wealth.
+        </p>
+
+
+        <h2>Purchases</h2>
+
+        <p>
+            When purchasing a product or resource, you are responsible for
+            providing accurate information and reviewing the product description
+            before completing your purchase.
+        </p>
+
+        <p>
+            Any refund, cancellation, or exchange terms displayed at the time of
+            purchase will apply to that purchase.
+        </p>
+
+
+        <h2>Third-Party Websites and Platforms</h2>
+
+        <p>
+            The She Owns Wealth website may contain links to third-party websites,
+            social platforms, vendors, suppliers, payment providers, or other
+            external services.
+        </p>
+
+        <p>
+            She Owns Wealth is not responsible for the content, products,
+            availability, security, privacy practices, policies, or performance
+            of third-party websites or services.
+        </p>
+
+
+        <h2>Intellectual Property</h2>
+
+        <p>
+            Unless otherwise stated, the She Owns Wealth name, website content,
+            written materials, original graphics, guides, templates, digital
+            products, branding, and other original content are owned by or
+            licensed to She Owns Wealth and are protected by applicable
+            intellectual property laws.
+        </p>
+
+
+        <h2>Limitation of Responsibility</h2>
+
+        <p>
+            You are responsible for your own business, purchasing, sourcing,
+            financial, and operational decisions. She Owns Wealth provides
+            information and resources designed to support learning and business
+            development, but individual outcomes cannot be guaranteed.
+        </p>
+
+
+        <h2>Changes to These Terms</h2>
+
+        <p>
+            These Terms &amp; Conditions may be updated from time to time as our
+            website, products, resources, or business practices change. The most
+            current version will be posted on this page.
+        </p>
+
+
+        <div class="legal-note">
+            <p>
+                By accessing the She Owns Wealth website or purchasing our products
+                or resources, you acknowledge and agree to these Terms &amp;
+                Conditions.
+            </p>
+        </div>
+
+
+        <div class="back-row">
+            <a href="index.html" class="back-button">
+                Back to She Owns Wealth
+            </a>
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-inner">
+
+            <div class="logo">
+                SHE OWNS
+                <span>WEALTH</span>
+            </div>
+
+            <div class="footer-copy">
+                © 2026 She Owns Wealth. All Rights Reserved.
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
