@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Privacy Policy | She Owns Wealth</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+        :root {
+            --ivory: #F8F4EE;
+            --soft-white: #FFFDFC;
+            --cream: #F2E9DE;
+            --gold: #C79A4A;
+            --gold-dark: #A9782F;
+            --espresso: #241C18;
+            --brown: #5F4A3E;
+            --muted: #897568;
+            --border: #E2D5C8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--ivory);
+            color: var(--espresso);
+            font-family: "DM Sans", sans-serif;
+            line-height: 1.75;
+        }
+
+        .announcement {
+            background: var(--gold);
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        nav {
+            background: var(--soft-white);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-inner {
+            max-width: 1180px;
+            margin: 0 auto;
+            min-height: 90px;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            text-decoration: none;
+            color: var(--espresso);
+            font-family: "Cormorant Garamond", serif;
+            font-size: 29px;
+            font-weight: 600;
+            letter-spacing: 6px;
+            line-height: 1;
+        }
+
+        .logo span {
+            display: block;
+            color: var(--gold);
+            font-size: 15px;
+            letter-spacing: 8px;
+            margin-top: 8px;
+        }
+
+        .home-link {
+            color: var(--gold-dark);
+            border: 1px solid var(--gold);
+            padding: 13px 22px;
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: 0.3s ease;
+        }
+
+        .home-link:hover {
+            background: var(--gold);
+            color: white;
+        }
+
+        .legal-hero {
+            text-align: center;
+            padding: 85px 24px 45px;
+        }
+
+        .eyebrow {
+            color: var(--gold-dark);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        h1 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: clamp(52px, 7vw, 82px);
+            font-weight: 500;
+            line-height: 1;
+        }
+
+        h1 span {
+            color: var(--gold);
+        }
+
+        .updated {
+            color: var(--muted);
+            font-size: 12px;
+            margin-top: 22px;
+        }
+
+        .legal-container {
+            max-width: 900px;
+            margin: 0 auto 90px;
+            padding: 50px 55px;
+            background: var(--soft-white);
+            border: 1px solid var(--border);
+            box-shadow: 0 18px 50px rgba(57, 39, 27, 0.06);
+        }
+
+        .legal-container h2 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 32px;
+            font-weight: 600;
+            margin-top: 35px;
+            margin-bottom: 10px;
+            color: var(--espresso);
+        }
+
+        .legal-container h2:first-child {
+            margin-top: 0;
+        }
+
+        .legal-container p {
+            color: var(--brown);
+            font-size: 15px;
+            margin-bottom: 18px;
+        }
+
+        .legal-note {
+            margin-top: 35px;
+            padding: 22px;
+            background: var(--cream);
+            border-left: 3px solid var(--gold);
+        }
+
+        .legal-note p {
+            margin-bottom: 0;
+        }
+
+        .back-row {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .back-button {
+            display: inline-block;
+            background: var(--gold);
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .back-button:hover {
+            background: var(--gold-dark);
+        }
+
+        footer {
+            background: #18120F;
+            color: white;
+            padding: 50px 24px 30px;
+        }
+
+        .footer-inner {
+            max-width: 1180px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            align-items: flex-end;
+        }
+
+        footer .logo {
+            color: white;
+        }
+
+        .footer-copy {
+            color: #CFC2BA;
+            font-size: 11px;
+            text-align: right;
+        }
+
+        @media (max-width: 700px) {
+            .nav-inner {
+                min-height: 75px;
+            }
+
+            .logo {
+                font-size: 22px;
+                letter-spacing: 4px;
+            }
+
+            .logo span {
+                font-size: 12px;
+                letter-spacing: 6px;
+            }
+
+            .home-link {
+                padding: 10px 14px;
+                font-size: 9px;
+            }
+
+            .legal-hero {
+                padding: 60px 20px 30px;
+            }
+
+            .legal-container {
+                margin: 0 18px 60px;
+                padding: 32px 24px;
+            }
+
+            .legal-container h2 {
+                font-size: 28px;
+            }
+
+            .footer-inner {
+                display: block;
+                text-align: center;
+            }
+
+            .footer-copy {
+                text-align: center;
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="announcement">
+        SHE OWNS WEALTH • BUILD INCOME • BUILD CONFIDENCE • BUILD SOMETHING OF YOUR OWN
+    </div>
+
+    <nav>
+        <div class="nav-inner">
+
+            <a class="logo" href="index.html">
+                SHE OWNS
+                <span>WEALTH</span>
+            </a>
+
+            <a class="home-link" href="index.html">
+                Back to Home
+            </a>
+
+        </div>
+    </nav>
+
+
+    <header class="legal-hero">
+
+        <div class="eyebrow">
+            She Owns Wealth
+        </div>
+
+        <h1>
+            Privacy <span>Policy</span>
+        </h1>
+
+        <div class="updated">
+            Last Updated: August 2026
+        </div>
+
+    </header>
+
+
+    <main class="legal-container">
+
+        <h2>Your Privacy Matters</h2>
+
+        <p>
+            She Owns Wealth respects your privacy. This Privacy Policy explains
+            how information may be collected and used when you visit our website,
+            join The Wealth List, download a resource, make a purchase, or otherwise
+            interact with She Owns Wealth.
+        </p>
+
+
+        <h2>Information We Collect</h2>
+
+        <p>
+            We may collect information you voluntarily provide, including your
+            name, email address, contact information, and information associated
+            with purchases or requests for digital resources.
+        </p>
+
+
+        <h2>How We Use Your Information</h2>
+
+        <p>
+            Information may be used to provide requested resources, communicate
+            with you, process purchases, deliver digital products, improve our
+            website and services, and send educational, business, promotional,
+            or marketing communications when permitted.
+        </p>
+
+
+        <h2>Email Communications</h2>
+
+        <p>
+            When you join The Wealth List or otherwise subscribe to our email
+            communications, you may receive business tips, educational content,
+            resources, product information, announcements, and promotional emails.
+        </p>
+
+        <p>
+            You may unsubscribe from marketing emails at any time by using the
+            unsubscribe link included in our emails.
+        </p>
+
+
+        <h2>Third-Party Services</h2>
+
+        <p>
+            We may use trusted third-party service providers to support functions
+            such as website hosting, email communications, payment processing,
+            digital product delivery, analytics, and other business operations.
+            These providers may process information as necessary to perform their
+            services.
+        </p>
+
+
+        <h2>Information Sharing</h2>
+
+        <p>
+            She Owns Wealth does not sell your personal information. Information
+            may be shared with service providers when reasonably necessary to
+            operate the website, deliver products or services, process transactions,
+            comply with applicable requirements, or protect legitimate business
+            interests.
+        </p>
+
+
+        <h2>Third-Party Links</h2>
+
+        <p>
+            This website may contain links to third-party websites, vendors,
+            platforms, or services. She Owns Wealth is not responsible for the
+            privacy practices, content, security, or policies of third-party websites.
+            We encourage you to review their policies before providing personal
+            information.
+        </p>
+
+
+        <h2>Policy Updates</h2>
+
+        <p>
+            This Privacy Policy may be updated from time to time as our website,
+            products, services, or business practices change. The updated version
+            will be posted on this page.
+        </p>
+
+
+        <div class="legal-note">
+            <p>
+                By continuing to use the She Owns Wealth website, you acknowledge
+                this Privacy Policy.
+            </p>
+        </div>
+
+
+        <div class="back-row">
+            <a href="index.html" class="back-button">
+                Back to She Owns Wealth
+            </a>
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-inner">
+
+            <div class="logo">
+                SHE OWNS
+                <span>WEALTH</span>
+            </div>
+
+            <div class="footer-copy">
+                © 2026 She Owns Wealth. All Rights Reserved.
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
