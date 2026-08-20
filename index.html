@@ -1003,7 +1003,23 @@
     .hero {
     padding-top: 0;
 }  
+.hero-grid {
+    grid-template-columns: 1fr;
+}
 
+.hero-image {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center top;
+    display: block;
+}
       .hero h1 {
         font-size: 58px;
       }
