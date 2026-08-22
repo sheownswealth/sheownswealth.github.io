@@ -118,38 +118,39 @@ section {
 }
 
     .nav-inner {
-      min-height: 82px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 30px;
-    }
+    min-height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 36px;
+}
 
     .logo {
-      font-family: "Cormorant Garamond", serif;
-      font-size: 28px;
-      line-height: 0.95;
-      letter-spacing: 3px;
-      font-weight: 600;
-    }
+    font-family: "Cormorant Garamond", serif;
+    font-size: 30px;
+    line-height: 0.92;
+    letter-spacing: 4px;
+    font-weight: 600;
+    white-space: nowrap;
+}
 
-    .logo span {
-      display: block;
-      margin-top: 7px;
-      color: var(--gold);
-      font-size: 17px;
-      letter-spacing: 7px;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 29px;
-      font-size: 12px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1.1px;
-    }
+.logo span {
+    display: block;
+    margin-top: 8px;
+    color: var(--gold);
+    font-size: 15px;
+    letter-spacing: 8px;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+}
+    
 
     .nav-links a {
       transition: color 0.2s ease;
@@ -158,18 +159,23 @@ section {
     .nav-links a:hover {
       color: var(--gold-dark);
     }
+.nav-button {
+    border: 1px solid var(--gold);
+    padding: 14px 22px;
+    color: var(--gold-dark);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+}
 
-    .nav-button {
-      border: 1px solid var(--gold);
-      padding: 13px 19px;
-      color: var(--gold-dark);
-      transition: 0.25s ease;
-    }
-
-    .nav-button:hover {
-      background: var(--gold);
-      color: white !important;
-    }
+.nav-button:hover {
+    background: var(--gold);
+    color: white !important;
+}
+    
 
     /* HERO */
 
