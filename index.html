@@ -20,50 +20,63 @@
   >
 
   <style>
-    :root {
-      --ivory: #F8F4EE;
-      --soft-white: #FFFDFC;
-      --cream: #F2E9DE;
-      --cream-deep: #EADFD1;
-      --gold: #C79A4A;
-      --gold-dark: #A9782F;
-      --espresso: #241C18;
-      --brown: #5F4A3E;
-      --muted: #897568;
-      --blush: #E8D1CA;
-      --blush-light: #F7ECE8;
-      --border: #E2D5C8;
-      --shadow: 0 18px 55px rgba(57, 39, 27, 0.08);
-    }
+   :root {
+    --ivory: #F8F4EE;
+    --soft-white: #FFFDFC;
+    --cream: #F2E9DE;
+    --cream-deep: #EADFD1;
+    --gold: #C79A4A;
+    --gold-dark: #A9782F;
+    --espresso: #241C18;
+    --brown: #5F4A3E;
+    --muted: #897568;
+    --blush: #E8D1CA;
+    --blush-light: #F7ECE8;
+    --border: #E2D5C8;
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    --shadow-soft: 0 16px 40px rgba(36, 28, 24, 0.06);
+    --shadow-card: 0 20px 60px rgba(36, 28, 24, 0.08);
 
-    html {
-      scroll-behavior: smooth;
-    }
+    --container: 1180px;
+    --section-space: 110px;
+    --section-space-mobile: 72px;
+}
 
-    body {
-      font-family: "DM Sans", sans-serif;
-      background: var(--soft-white);
-      color: var(--espresso);
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    img {
-      display: block;
-      max-width: 100%;
-    }
+html {
+    scroll-behavior: smooth;
+}
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+body {
+    font-family: "DM Sans", sans-serif;
+    background: var(--soft-white);
+    color: var(--espresso);
+    line-height: 1.65;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    
+    width: min(100% - 40px, var(--container));
+    margin-inline: auto;
+}
+
+section {
+    padding-block: var(--section-space);
+}
     button,
     input {
       font: inherit;
@@ -95,13 +108,14 @@
     /* NAVIGATION */
 
     nav {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(255, 253, 252, 0.96);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(199, 154, 74, 0.15);
-    }
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 253, 252, 0.98);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-bottom: 1px solid var(--border);
+}
 
     .nav-inner {
       min-height: 82px;
