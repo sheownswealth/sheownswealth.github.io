@@ -1092,74 +1092,169 @@ section {
 }
       
 
-#wealth-list {
+
+.wealth-signup {
     width: 100%;
-    padding: 80px 20px;
-    background: #FFFDFC !important;
-    box-sizing: border-box;
+    padding: 110px 24px;
+    background: var(--soft-white);
+}
 
-    display: flex;
-    justify-content: center;
-}
-#wealth-list.free-guide {
-    background: #FFFDFC !important;
-}
-#wealth-list .wealth-list-wrapper {
+.wealth-signup-inner {
     width: 100%;
-    max-width: 700px;
-    flex: 0 1 700px;
-    background: transparent !important;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-#wealth-list form[data-uid="cad6ea53ff"],
-#wealth-list .formkit-form {
-    width: 100% !important;
-    max-width: 700px !important;
-    margin: 0 auto !important;
-    position: static !important;
-    left: auto !important;
-    right: auto !important;
-    transform: none !important;
-    box-sizing: border-box !important;
-    background: #FFFDFC !important;
-    border: none !important;
-    box-shadow: none !important;
-    border-radius: 0 !important;
+.wealth-eyebrow {
+    margin-bottom: 22px;
+    color: var(--gold-dark);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
 }
 
+.wealth-signup h2 {
+    max-width: 760px;
+    margin: 0 auto 28px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(48px, 5vw, 72px);
+    font-weight: 500;
+    line-height: 0.95;
+    color: var(--espresso);
+}
 
+.wealth-signup h2 span {
+    color: var(--gold);
+}
 
-  </style>
+.wealth-signup-copy {
+    max-width: 620px;
+    margin: 0 auto 36px;
+    color: var(--brown);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.wealth-signup-form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    border: 1px solid var(--border);
+    background: white;
+}
+
+.wealth-signup-form input {
+    width: 100%;
+    min-width: 0;
+    padding: 18px 22px;
+    border: 0;
+    outline: 0;
+    background: white;
+    color: var(--espresso);
+    font: inherit;
+    font-size: 14px;
+}
+
+.wealth-signup-form input::placeholder {
+    color: var(--muted);
+}
+
+.wealth-signup-form input:focus {
+    box-shadow: inset 0 0 0 1px var(--gold);
+}
+
+.wealth-signup-form button {
+    padding: 18px 28px;
+    border: 0;
+    background: var(--gold);
+    color: white;
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    white-space: nowrap;
+    transition: background 0.25s ease;
+}
+
+.wealth-signup-form button:hover {
+    background: var(--gold-dark);
+}
+
+.wealth-signup-note {
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.kit-credit {
+    margin-top: 26px;
+    color: var(--muted);
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 700px) {
+    .wealth-signup {
+        padding: 72px 20px;
+    }
+
+    .wealth-signup-form {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        border: 0;
+        background: transparent;
+    }
+
+    .wealth-signup-form input {
+        border: 1px solid var(--border);
+    }
+
+    .wealth-signup-form button {
+        width: 100%;
+    }
+}
+</style>
 </head>
 
 <body>
 
-  <div class="announcement">
-    WELCOME TO SHE OWNS WEALTH • BUILD INCOME • BUILD CONFIDENCE • BUILD SOMETHING OF YOUR OWN
-  </div>
-
-  <nav>
-    <div class="container nav-inner">
-
-      <a class="logo" href="#home">
-        SHE OWNS
-        <span>WEALTH</span>
-      </a>
-
-      <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#build">Start Here</a>
-        <a href="#shop">Shop</a>
-        <a href="#founder">About</a>
-        <a href="#community">Community</a>
-
-        <a class="nav-button" href="#community">
-          Join the Community
-        </a>
-      </div>
-
+    <div class="announcement">
+        WELCOME TO SHE OWNS WEALTH • BUILD INCOME • BUILD CONFIDENCE • BUILD SOMETHING OF YOUR OWN
     </div>
-  </nav>
+
+    <nav>
+        <div class="container nav-inner">
+
+            <a class="logo" href="#home">
+                SHE OWNS
+                <span>WEALTH</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#build">Start Here</a>
+                <a href="#shop">Shop</a>
+                <a href="#founder">About</a>
+                <a href="#community">Community</a>
+
+                <a class="nav-button" href="#community">
+                    Join the Community
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+  
+
+    
 
   <header class="hero" id="home">
     <div class="container hero-grid">
@@ -1579,20 +1674,54 @@ section {
 
   
 
-    
+  <section class="wealth-signup" id="wealth-list">
 
- <section class="free-guide" id="wealth-list" style="width:100%; padding:80px 20px; background:#FFFDFC; box-sizing:border-box; display:flex; justify-content:center;">
+    <div class="wealth-signup-inner">
 
-    <div class="wealth-list-wrapper" style="width:100%; max-width:700px; margin:0 auto;">
+        <div class="wealth-eyebrow">THE WEALTH LIST</div>
 
-        <script async
-            data-uid="cad6ea53ff"
-            src="https://she-owns-wealth-academy.kit.com/cad6ea53ff/index.js">
-        </script>
+        <h2>
+            Build More. Know More.
+            <span>Own More.</span>
+        </h2>
+
+        <p class="wealth-signup-copy">
+            Business gems, income ideas, vendor resources, and tools
+            to help you build something of your own, delivered straight
+            to your inbox.
+        </p>
+
+        <form
+            class="wealth-signup-form"
+            action="https://app.kit.com/forms/9800682/subscriptions"
+            method="post"
+        >
+            <input
+                type="email"
+                name="email_address"
+                placeholder="Enter your email address"
+                aria-label="Email Address"
+                required
+            >
+
+            <button type="submit">
+                JOIN THE WEALTH LIST
+            </button>
+        </form>
+
+        <p class="wealth-signup-note">
+            No spam. Just resources, opportunities, and moves worth knowing about.
+        </p>
+
+        <p class="kit-credit">
+            Built with Kit
+        </p>
 
     </div>
 
-</section>
+</section>  
+
+ 
 
   <section class="community" id="community">
 
